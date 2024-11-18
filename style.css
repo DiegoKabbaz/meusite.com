@@ -1,10 +1,4 @@
 
- {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 body {
     font-family: Arial, sans-serif;
@@ -90,3 +84,29 @@ form input[type="submit"] {
     padding: 10px;
     width: 150px;
 }
+
+    produto-galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    produto-item {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    produto-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    produto-item h3 {
+        margin: 10px 0 5px;
+    }
+    produto-item p {
+        margin: 5px 0;
+    }
