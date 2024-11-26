@@ -1,6 +1,6 @@
 <section>
 
-        <form action="?pg=obrigado" method="POST">
+        <form action="?pg=envia_msg" method="POST">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br>
 
