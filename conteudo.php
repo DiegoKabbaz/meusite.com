@@ -102,7 +102,8 @@
         <img src="img/img11.jpg" alt="">
         <img src="img/img12.jpg" alt="">
     </div>
-    <a href="produtos.php" style="text-decoration: none;">
+
+    <form action="?pg=produtos" method="POST" style="text-decoration: none;">
         <div class="centraliza-button"><button type="">COMPRE AGORA</button></div>
     </a>
     <div class="container3">
