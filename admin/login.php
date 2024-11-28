@@ -2,6 +2,8 @@
 
 include_once "../config.inc.php";
 
+
+
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 

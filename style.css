@@ -1,49 +1,43 @@
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     padding: 10px;
 }
+
+
 header {
-    height: 140px;
-    background-image: url('img/img7.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #007BFF;
     color: white;
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
 }
-header div p{
-    background-color: #0753a5;
-    padding: 8px;
-    width: 220px;
-    font-weight: bold;
-border-radius: 15PX;
-}
-.div-p{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
+
 header h1 {
     margin: 0;
 }
+
 nav {
     background-color: #333;
     padding: 10px;
     text-align: center;
     margin-bottom: 20px;
 }
+
 nav ul li {
     display: inline;
     margin-right: 15px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
+
 section {
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -51,10 +45,12 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     color: #0753a5;
     margin-bottom: 15px;
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -65,6 +61,30 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
     produto-galeria {
         display: flex;
         flex-wrap: wrap;
