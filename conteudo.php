@@ -97,11 +97,12 @@
         <li><strong>Aventais descartáveis e EPI's: </strong>Proteção essencial para profissionais de saúde e pacientes.</li>
     </ul>
     
-    <div class="container2">
-        <img src="img/img10.jpg" alt="">
-        <img src="img/img11.jpg" alt="">
-        <img src="img/img12.jpg" alt="">
-    </div>
+    
+<?php
+    include("lista_produtos.php");
+
+?>
+
 
     <form action="?pg=produtos" method="POST" style="text-decoration: none;">
         <div class="centraliza-button"><button type="">COMPRE AGORA</button></div>

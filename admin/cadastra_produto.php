@@ -18,7 +18,7 @@ if (isset($_FILES['imagem'])) {
         die("Imagem muito grande!! Max: 2MB");
     }
 
-    $pasta = "C:/xampp/htdocs/aula_php/MeuSite.com/admin/arquivos/";
+    $pasta = "C:/xampp/htdocs/MeuSite.com/admin/arquivos/";
 
     if (!is_dir($pasta)) {
         mkdir($pasta, 0777, true);
