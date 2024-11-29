@@ -13,8 +13,6 @@ if (!$query) {
 
 echo "<h1>Nossos Produtos</h1>";
 echo "<p>Veja abaixo alguns de nossos produtos:</p>";
-
-
 ?>
 <style>
     .produto-galeria {
@@ -42,29 +40,53 @@ echo "<p>Veja abaixo alguns de nossos produtos:</p>";
     .produto-item p {
         margin: 5px 0;
     }
+    .buy-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #25D366;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .buy-button:hover {
+        background-color: #1da851;
+    }
 </style>
 
 <section class="produto-galeria">
 <?php
-
 if (mysqli_num_rows($query) > 0) {
     while ($produto = mysqli_fetch_assoc($query)) {
+        $nomeProduto = urlencode($produto['nome']);
+        $categoriaProduto = urlencode($produto['categoria']);
+        $precoProduto = "R$ " . number_format($produto['preco'], 2, ',', '.');
+        $whatsApp = "5583996709591"; 
+
+        $mensagem = urlencode(
+            "Olá! Tenho interesse no produto: {$produto['nome']}.\n" .
+            "Categoria: {$produto['categoria']}.\n" .
+            "Preço: {$precoProduto}."
+        );
+
         echo "<div class='produto-item'>";
         if (!empty($produto['imagem'])) {
-            echo "<img src='admin/arquivos/$produto[imagem]'}' alt='{$produto['nome']}'>";
-            
+            echo "<img src='admin/arquivos/$produto[imagem]' alt='{$produto['nome']}'>";
         } else {
             echo "<img src='img/produto-padrao.png' alt='Imagem não disponível'>"; 
         }
         echo "<h3>{$produto['nome']}</h3>";
         echo "<p>Categoria: {$produto['categoria']}</p>";
         echo "<p>Marca: {$produto['marca']}</p>";
-        echo "<p>Preço: R$ " . number_format($produto['preco'], 2, ',', '.') . "</p>";
+        echo "<p>Preço: {$precoProduto}</p>";
+        echo "<a class='buy-button' href='https://wa.me/{$whatsApp}?text={$mensagem}' target='_blank'>Comprar pelo WhatsApp</a>";
         echo "</div>";
     }
 } else {
     echo "<h2>Não há produtos cadastrados no sistema.</h2>";
 }
+
 ?>
 </section>
 
