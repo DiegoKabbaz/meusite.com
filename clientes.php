@@ -22,8 +22,9 @@
 
     <nav>
     
-        <img src="img/img2.jpg" alt="image2">
-        <img src="img/img1.jpeg" alt="image1">
-        <img src="img/img2.jpg" alt="image2"> 
+        <img src="img/unimed.jpg" alt="image1">
+        <img src="img/trauma.png" alt="image2">
+        <img src="img/hnsn.jpg" alt="image3"> 
+        <img src="img/memorial.jpg" alt="image4"> 
     </nav>
 </section>
