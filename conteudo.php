@@ -6,15 +6,15 @@
     <title>Document</title>
     <style>
         .container1{
-            width: 100%; /* Ajuste o tamanho horizontal (com margens incluídas) */
-            height: 380px; /* Metade da altura da página */
+            width: 100%; 
+            height: 380px; 
             background-color: #333;
             display: flex;
             align-items: center;
         }
         .container2{
-            width: 100%; /* Ajuste o tamanho horizontal (com margens incluídas) */
-            height: 380px; /* Metade da altura da página */
+            width: 100%; 
+            height: 380px; 
             background-color: #333;
             display: flex;
             align-items: center;
@@ -25,8 +25,8 @@
             height: 250px;
         }
         .container3{
-            width: 100%; /* Ajuste o tamanho horizontal (com margens incluídas) */
-            height: 280px; /* Metade da altura da página */
+            width: 100%; 
+            height: 280px; 
             background-color: #333;
             flex-direction: column;
             margin: 25px 0;
@@ -53,7 +53,7 @@
 
         h1{
             text-align: center;
-            margin: 50px 0;
+            margin: 10px 0;
             font-family: sans-serif;
         }
         button{

@@ -20,6 +20,9 @@ echo "<p>Veja abaixo alguns de nossos produtos:</p>";
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+        margin-bottom: 50px; 
+        padding: 20px; 
+    
     }
     .produto-item {
         border: 1px solid #ccc;
@@ -62,7 +65,7 @@ if (mysqli_num_rows($query) > 0) {
         $nomeProduto = urlencode($produto['nome']);
         $categoriaProduto = urlencode($produto['categoria']);
         $precoProduto = "R$ " . number_format($produto['preco'], 2, ',', '.');
-        $whatsApp = "5583996709591"; 
+        $whatsApp = "5583993941933"; 
 
         $mensagem = urlencode(
             "Olá! Tenho interesse no produto: {$produto['nome']}.\n" .
