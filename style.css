@@ -6,10 +6,9 @@ body {
 }
 header {
     height: 140px;
-    background-image: url('img/img7.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
